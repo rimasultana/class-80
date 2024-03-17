@@ -2,10 +2,10 @@ class Car {
     constructor(name) {
       this.name = name;
     }
-    static hello() {
-      return "Hello!!";
+    static hello(x) {
+      return "Hello " + x.name;
     }
   }
-  
   const myCar = new Car("Ford");
-  console.log(Car.hello());
+
+  console.log(Car.hello(myCar));
